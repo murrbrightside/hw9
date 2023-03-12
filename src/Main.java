@@ -47,20 +47,11 @@ public class Main {
         System.out.println(avrgSum);}
         public static void task4 () {
             System.out.println("Задача 4");
-            int help = 10;
-            char memory = ' ';
-            char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-            for (int i = 0; i < reverseFullName.length; i++) {
-                if(help < reverseFullName.length/2){
-                    break;
-                }
-                memory = reverseFullName[i];
-                reverseFullName[i] = reverseFullName[help];
-                reverseFullName[help] = memory;
-                help -=1;
 
+            char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+            for(int i = reverseFullName.length -1 ; i >= 0; i--){
+                System.out.print(reverseFullName[i]);
             }
-            System.out.println(reverseFullName);
 
         }
     }
